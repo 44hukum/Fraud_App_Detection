@@ -8,6 +8,9 @@ from . import forms
 
 
 def index(request):
+    if request.user.is_authenticated:
+        return redirect('home')
+        
     if request.method== 'POST':
         form = forms.Login(request.POST)
         if form.is_valid():
@@ -34,7 +37,8 @@ def signup(request):
                 user_form.cleaned_data['password']
             )
             new_user.save()
-            return render(request,'index.html',{'new_user':new_user})
+            login(request,new_user)
+            return redirect('home')
         else:
             print("user form is not valid",user_form.errors)
             return render(request,'register.html',{'error':user_form.errors})
@@ -52,5 +56,5 @@ def review(request):
 @login_required
 def logout_out(request):
     logout(request)
-    return render(request,'index.html')
+    return redirect('index')
 
