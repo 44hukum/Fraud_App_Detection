@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+    <link rel="stylesheet" href="{%static 'assets/fonts/font-awesome.min.css' %}">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid">
+                        <div></div><a class="btn btn-primary btn-sm border rounded-pill" role="button" style="font-size: 27px;background: rgb(17,46,68);" href="/logout"><i class="fa fa-arrow-circle-o-left" style="padding: 5px;font-size: 32px;"></i>Logout</a>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1" style="text-align: center;font-size: 19.2px;"><span style="font-size: 22.2px;">WWW.facebook.com</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0" style="text-align: center;"><a class="d-xl-flex align-items-xl-center justify-content-xxl-center" href="/review" style="font-size: 17px;padding: 9px;text-decoration: none; ">Click to review<i class="fa fa-arrow-circle-o-right" style="font-size: 29px;padding: 6px;"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'assets/js/theme.js'%}"></script>
+</body>
+
+</html>

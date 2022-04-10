@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+    <link rel="stylesheet" href="{%static 'assets/fonts/font-awesome.min.css' %}">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid">
+                        <a class="btn btn-primary btn-sm border rounded-pill" role="button" style="font-size: 27px;background: rgb(17,46,68);" href="/home"><i class="fa fa-arrow-circle-o-left" style="padding: 5px;font-size: 32px;"></i>Back</a>
+                        <ul class="navbar-nav flex-nowrap ms-auto"></ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
+                    <div class="row d-xxl-flex justify-content-xxl-center">
+                        <div class="col-md-6 col-xl-3 mb-4" style="margin-bottom: 48px;">
+                            <div class="card shadow border-start-primary py-2" style="width: 475px;">
+                                <div class="card-body">
+                                    <div class="row row-cols-1">
+                                        <div class="col">
+                                            <p style="color: rgb(0,0,0);font-family: Acme, sans-serif;">Link: Facebook</p>
+                                        </div>
+                                        <div class="col text-center" style="width: 100%;">
+                                            <form>
+                                                <div class="user-body" style="text-align: left;color: rgba(255,245,0,0);margin-bottom: 3px;"><span class="fa fa-star checked" style="color: rgb(255,184,0);"></span><span class="fa fa-star checked" style="color: rgb(255,184,0);"></span><span class="fa fa-star checked" style="color: rgb(255,184,0);"></span><span class="fa fa-star checked" style="color: rgb(78,78,78);"></span><span class="fa fa-star checked" style="color: rgb(78,78,78);"></span></div><textarea class="border rounded-0 form-control" style="width: 100%;margin-bottom: 15px;color: rgb(0,0,0);" placeholder="your review" name="review"></textarea><button class="btn btn-primary btn-sm border rounded-0" type="submit" style="width: 100%;background: rgb(18,40,61);height: 52px;">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow border-start-primary py-2" style="width: 475px;margin-top: 35px;">
+                                <div class="card-body">
+                                    <div class="row row-cols-1">
+                                        <div class="col text-center" style="width: 100%;">
+                                            <div>
+                                                <p>Thank-you for Review</p>
+                                            </div>
+                                            <div><i class="fa fa-check-circle" style="color: rgb(78,230,25);font-size: 132px;"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'assets/js/theme.js'%}"></script>
+</body>
+
+</html>
